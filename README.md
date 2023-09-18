@@ -14,4 +14,29 @@
 
 #### Distribuições de frequência
 
+Definição: É uma tabela que mostra classes ou intervalos dos valores com a contagem do número de ocorrências em cada classe ou intervalo.
+Cada classe tem um limite inferior e superior, onde o inferior é o menor número que pode pertencer à classe e o superior que é o maior número
+que pode pertencer a classe.
+A amplitude de classe é a distância entre os limites inferiores e superiores.
+O código abaixo mostra isso.
+
+``` # Determine o número de classes
+num_classe = 5
+
+# Determine o valor mínimo e máximo
+valor_minimo = df['idade'].min()
+valor_maximo = df['idade'].max()
+
+# Determine a amplitude da classe
+amplitude = (valor_maximo - valor_minimo) / num_classe
+
+# Arredonde a amplitude para baixo
+amplitude_arredondada = math.floor(amplitude)
+
+print('Idade mínima: ', valor_minimo)
+print('Idade máxima: ', valor_maximo)
+print('A amplitude é: ' , valor_maximo , '-' , valor_minimo , '=' , amplitude_arredondada)
+```
+
+
 
