@@ -64,6 +64,8 @@ print(tabela_frequencia)
 
 ```
 
+<img align="center" height="90" width="250" src="frequencia.jpg">
+
 
 
 
