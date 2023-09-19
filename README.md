@@ -8,65 +8,75 @@
 - Em outros projetos vou documentar meus estudos nessas ferramentas
   
 
+# Sumário
+
 ## Parte I: Estatística Descritiva
+### 1.1 Introdução a Estatística
+- Uma visão geral dos dados
+- Classificação dos dados
+- Coleta de dados e planejamento de experimentos
 
-### Distribuições de frequência e seus gráficos
+### 1.2 Estatística Descritiva
+- Distribuição de Frequência e seus gráficos
+- Mais gráficos
+- Medidas de tendência central
+- Medidas de variação
+- Medidas de posição
 
-#### Distribuições de frequência
+## Parte II: Probabilidade e distribuições de probabilidades
+### 2.1 Probabilidade
+- Conceitos básicos de probabilidade e contagem
+- Probabilidade condicional e a regra de multiplicação
+- A regra da adição
+- Tópicos adicionais sobre probabilidade e contagem
 
-Definição: É uma tabela que mostra classes ou intervalos dos valores com a contagem do número de ocorrências em cada classe ou intervalo.
-Cada classe tem um limite inferior e superior, onde o inferior é o menor número que pode pertencer à classe e o superior que é o maior número
-que pode pertencer a classe.
-A amplitude de classe é a distância entre os limites inferiores e superiores.
-O código abaixo vai mostrar isso. Utilizando dados da idade de Estudantes da UFG do curso Gestão da Informação.
+### 2.2 Distribuições discretas de probabilidade
+- Distribuições de probabilidade
+- Distribuições binomiais
+- Mais distribuições discretas de probabilidade
 
-``` # Determine o número de classes
-num_classe = 5
+### 2.3 Distribuição normal de probabilidade
+- Introdução às distribuições normais e à distribuição normal padrão
+- Distribuiçções normais: encontrando probabilidades
+- Distribuições normais: calculando valores
+- Distribuições amostrais e o teorema do limite central
+- Aproximações normais para distribuições binomiais
 
-# Determine o valor mínimo e máximo
-valor_minimo = df['idade'].min()
-valor_maximo = df['idade'].max()
+## Parte III: Estatística inferencial
+### 3.1 Intervalos de confiança
+- Intervalos de confiança para a média (desvio padrão conhecido)
+- Intervalos de confiança para a média (desvio padrão desconhecido)
+- Intervalos de confiança para a proporção
+- Intervalos de confiança para variância e desvio padrão
 
-# Determine a amplitude da classe
-amplitude = (valor_maximo - valor_minimo) / num_classe
+### 3.2 Teste de hipótese com uma amostra
+- Introdução ao teste de hipótese
+- Teste de hipótese para a média (desvio padrão conhecido)
+- Teste de hipótese para a média (desvio padrão desconhecido)
+- Teste de hipótese para a proporção
+- Teste de hipótese para variância e desvio padrão
 
-# Arredonde a amplitude para baixo
-amplitude_arredondada = math.floor(amplitude)
+### 3.3 Teste de hipótese usando duas amostras
+- Testando a diferença entre médias (amostras independentes, desvio padrão conhecido)
+- Testando a diferença entre médias (amostras independentes, desvio padrão desconhecido)
+- Testando a diferença entre média (amostras dependentes)
+- Testando a diferença entre proporções
 
-print('Idade mínima: ', valor_minimo)
-print('Idade máxima: ', valor_maximo)
-print('A amplitude é: ' , valor_maximo , '-' , valor_minimo , '=' , amplitude_arredondada)
-```
+ ## Parte IV: Mais inferências estatísticas
+ ### 4.1 Correlação e regressão
+ - Correlação
+ - Regressão linear
+ - Medidas de regressão e intervalos de previsão
+ - Regressão múltipla
 
-<img align="center" height="90" width="250" src="idade.jpg">
+### 4.2 Teste qui-quadrado e a distribuição F
+- Teste de qualidade do ajuste
+- Independência
+- Comparando duas variâncias
+- Análise de variância
 
+# Referências
 
-O valor mínimo é um limite inferior conveniente para a primeira 
-classe. Para encontrar os limites inferiores das 5 classes restantes, 
-adicione a amplitude de classe, 7, ao limite inferior de cada classe precedente. Logo, os limites inferiores das demais classes são: 18+ 7 = 25, 25 + 7 = 32, e assim por diante. A tabela abaixo vai mostrar como fica a frequência de idades dos estudantes de Gestão da Informação da UFG.
-Observação: Dados de até 2018.
-
-```
-# Crie os intervalos de classe
-intervalos = [valor_minimo + i * amplitude_arredondada for i in range(num_classe + 1)]
-
-# Use pd.cut() para criar as classes e atribuir cada idade a uma classe
-df['classe_idade'] = pd.cut(df['idade'], bins=intervalos, include_lowest=True)
-
-# Use value_counts() para contar a frequência de cada classe
-tabela_frequencia = df['classe_idade'].value_counts().sort_index().reset_index()
-
-# Renomeie as colunas para "Classe de Idade" e "Frequência"
-tabela_frequencia.columns = ['Classe de Idade', 'Frequência']
-
-# Exiba a tabela de frequência
-print(tabela_frequencia)
-
-```
-
-<img align="center" height="90" width="250" src="frequencia.jpg">
-
-
-
+[Estatística Aplicada (Ron Larson)](https://www.amazon.com.br/Estat%C3%ADstica-aplicada-Ron-Larson/dp/8543004772/ref=asc_df_8543004772/?tag=googleshopp00-20&linkCode=df0&hvadid=379792581512&hvpos=&hvnetw=g&hvrand=16957258220893518027&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031432&hvtargid=pla-810094894282&psc=1)
 
 
