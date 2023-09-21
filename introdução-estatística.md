@@ -23,4 +23,30 @@ Há dois tipos de conjuntos de dados e são chamados de população e amostra.
   - Estatística Descritiva: é o ramo da estatística que envolve a organização, o resumo e a representação dos dados.
   - Estatística Inferencial: é o ramo da estatística que envolve o uso de uma  amostra para chegar a conclusões sobre uma população.
 Conceitos de Probabilidade é muito usado nessa parte.
-  
+
+## Classificação dos dados
+### Tipos de dados
+
+Os conjuntos de dados consistem em dois tipos: qualitativo e quantitativo
+- Dados qualitativos: consistem em atributos, rótulos ou entradas não numéricas.
+- Dados quantitativos: consistem em medidas numéricas ou contagens.
+
+### Níveis de mensuração
+
+  O nível de mensuração determina quais operações estatísticas são apropriadas. Existem 4 tipos: nominal, ordinal, intervalar e de razão.
+
+  - Dados de mensuração nominal: são apenas qualitativos. Dados 
+nesse nível são categorizados usando-se nomes, rótulos ou qualidades. Não 
+é possível realizar cálculos matemáticos nesse nível.
+ - Dados de mensuração ordinal: são qualitativos ou quantitativos. 
+Dados nesse nível podem ser postos em ordem ou classificados, mas as 
+diferenças entre as entradas de dados não têm sentido matemático.
+ - Dados de mensuração intervalar: podem ser ordenados e é 
+possível calcular diferenças que tenham sentido matemático entre as 
+entradas de dados. No nível intervalar, um registro zero simplesmente 
+representa uma posição em uma escala; a entrada não é um zero natural.
+ - Dados de mensuração de razão: são similares aos dados no nível 
+intervalar, com a propriedade adicional de que, nesse nível, um registro 
+zero é um zero natural.
+
+
