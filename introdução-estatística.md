@@ -49,4 +49,17 @@ representa uma posição em uma escala; a entrada não é um zero natural.
 intervalar, com a propriedade adicional de que, nesse nível, um registro 
 zero é um zero natural.
 
+##### Operações apropriadas nos níveis de mensuração.
+
+| Nível de mensuração   | Categorizar os dados | Ordenar os dados | Substrair os dados | Determinar se um  dado é múltiplo de outro |
+| --------------------- | -------------------- | ---------------- | ------------------ | ------------------------------------------ |                      
+| Nominal               | Sim                  | Não              | Não                | Não                                        |
+| Ordinal               | Sim                  | Sim              | Não                | Não                                        |
+| Intervalar            | Sim                  | Sim              | Sim                | Não                                        |
+| Razão                 | Sim                  | Sim              | Sim                | Sim                                        |
+
+
+
+
+
 
