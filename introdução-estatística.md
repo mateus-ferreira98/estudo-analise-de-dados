@@ -122,10 +122,10 @@ print(tabela_tipos_dados)
  | ANO INGRESSO                 | Intervalar   |
  | IDADE                        | Razão        |
 
-Turno é um dado nominal, pois não tem uma ordem intrínseca. (Matutino, Vespertino, Integral, Noturno)
-Ação Afirmativa participação é um dado Ordinal, pois existe uma ordem para o aluno ingressar. (sem cotas ou com cotas, e dentro da cotas tem uma ordem)
-Ano ingresso é um dado Intervalar, pois podemos colocar eles em um intervalo. (Qual intervalo de ano teve mais trancamentos)
-Idade é um dado de Razão, pois podemos fazer vários cálculos matématicos com ele. (média, se um é múltiplo por outro)
+Turno é um dado nominal, pois não tem uma ordem intrínseca. (Matutino, Vespertino, Integral, Noturno). <br>
+Ação Afirmativa participação é um dado Ordinal, pois existe uma ordem para o aluno ingressar. (sem cotas ou com cotas, e dentro da cotas tem uma ordem). <br>
+Ano ingresso é um dado Intervalar, pois podemos colocar eles em um intervalo. (Qual intervalo de ano teve mais trancamentos). <br>
+Idade é um dado de Razão, pois podemos fazer vários cálculos matématicos com ele. (média, se um é múltiplo por outro). <br>
 
  
 
